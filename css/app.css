@@ -1,13 +1,15 @@
 *{
     padding: 0;
     margin: 0;
-
 }
 body{
     background-image: url("../img/7057cbcecaa171b.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+#todo-item{
+    width: 100%;
 }
 .back-g{
     background-color: rgba(245, 245, 220, 0.9);
@@ -19,22 +21,39 @@ body{
     background-color: rgb(96, 138, 255);
     color: white;
     border-radius: 5px;
-    width: 100px;
+    width: 100%;
 }
 .li-btn{
     float: right !important;    
-    padding: 10px;
+    padding: 5px 10px 0 10px;
+    cursor: pointer;
 }
-li{
-    padding:10px 0 10px 0px;
-    margin: 0 10px 0 25px;
-    
+.content-div ul li{
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+    border-bottom: 1px solid black;
 }
-#list{
-    list-style-type: decimal;
-    
+.content-div ul{
+    list-style-type: decimal;  
 }
-ul{
-    max-height: 500px;
+.content-div ul{
+    max-height:480px;
+    padding:0px 0px 0px 30px;
     overflow-y: scroll;
+    overflow-wrap: break-word;
+}
+
+
+@media screen and (max-width: 700px){
+    .back-g{
+        background-color: rgba(245, 245, 220, 0.9);
+        padding:10px;
+        width: 100%;
+    }
+    .todo-btn{
+        background-color: rgb(96, 138, 255);
+        color: white;
+        border-radius: 5px;
+        width: 100%;
+    }
 }

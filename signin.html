@@ -1,0 +1,58 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="shortcut icon" href="#" />
+
+    <link rel="stylesheet" href="resources\bootstrap\css\bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/sign.css">
+
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-database.js"></script>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyCqYkhkhJu7qZ6q1X81Ys-Jgxuz3-BQYDQ",
+            authDomain: "todo-app-5102e.firebaseapp.com",
+            databaseURL: "https://todo-app-5102e.firebaseio.com",
+            projectId: "todo-app-5102e",
+            storageBucket: "todo-app-5102e.appspot.com",
+            messagingSenderId: "890459619174",
+            appId: "1:890459619174:web:a065463a231fdb073152a7",
+            measurementId: "G-9EC6F7CMGX"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        alert("For Quick Access use \nEmail : amir@mail.com\nPassword : 123456")
+    </script>
+
+</head>
+
+
+<body>
+
+    <div class="main">
+        <p class="sign" align="center">Sign In</p>
+        <form class="form1">
+            <input class="un " id="user-name" type="text" align="center" placeholder="Email">
+            <input class="pass" id='user-pass' type="password" align="center" placeholder="Password">
+            <p class="submit" align="center" onclick="signIn()">Sign In</p><br>
+            <p class="submit" align="center" onclick="window.location.assign('signup.html')">Sign Up</p>
+            <p class="fb_btn mt-4" align="center" style="background-color: blue !important;" onclick="fbLogin()">Sign In Using Facebook</p>
+        </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="resources\bootstrap\js/bootstrap.min.js"></script>
+
+    <script src="js/auth.js"></script>
+
+</body>
+
+</html>
